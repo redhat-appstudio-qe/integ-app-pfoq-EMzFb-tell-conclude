@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-component-dtgqaw
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/kasem_org/integration3-puky-tenant/integ-app-pfoq/python-component-dtgqaw@sha256:22db46fa3bb28ed10e7c97b1ed15b81b1c88822a2ca8727f4641eabbb10628a4
+        name: my-nginx
+        resources: {}
+status: {}

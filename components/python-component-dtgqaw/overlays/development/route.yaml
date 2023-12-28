@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: python-component-dtgqaw
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: python-component-dtgqaw
+    app.kubernetes.io/part-of: integ-app-pfoq
+  name: python-component-dtgqawo1iz
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: python-component-dtgqaw
+    weight: 100
+status: {}
